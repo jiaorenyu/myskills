@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Skills – jiaorenyu</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: #0d1117;
+      color: #c9d1d9;
+      line-height: 1.6;
+      padding: 2rem 1rem;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 3rem;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      color: #58a6ff;
+      margin-bottom: 0.5rem;
+    }
+
+    header p {
+      color: #8b949e;
+      font-size: 1.1rem;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    section {
+      margin-bottom: 3rem;
+    }
+
+    h2 {
+      font-size: 1.4rem;
+      color: #f0f6fc;
+      border-bottom: 1px solid #30363d;
+      padding-bottom: 0.5rem;
+      margin-bottom: 1.5rem;
+    }
+
+    /* Skills grid */
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 1rem;
+    }
+
+    .skill-card {
+      background: #161b22;
+      border: 1px solid #30363d;
+      border-radius: 8px;
+      padding: 1rem 1.2rem;
+      transition: border-color 0.2s;
+    }
+
+    .skill-card:hover {
+      border-color: #58a6ff;
+    }
+
+    .skill-card .name {
+      font-weight: 600;
+      color: #f0f6fc;
+      margin-bottom: 0.3rem;
+    }
+
+    .skill-card .stars {
+      color: #e3b341;
+      font-size: 0.9rem;
+      margin-bottom: 0.4rem;
+    }
+
+    .skill-card .note {
+      font-size: 0.82rem;
+      color: #8b949e;
+    }
+
+    /* Tags */
+    .tag-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
+
+    .tag {
+      background: #21262d;
+      border: 1px solid #30363d;
+      border-radius: 20px;
+      padding: 0.3rem 0.8rem;
+      font-size: 0.85rem;
+      color: #c9d1d9;
+    }
+
+    /* Project cards */
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+      gap: 1rem;
+    }
+
+    .project-card {
+      background: #161b22;
+      border: 1px solid #30363d;
+      border-radius: 8px;
+      padding: 1rem 1.2rem;
+      text-decoration: none;
+      color: inherit;
+      display: block;
+      transition: border-color 0.2s;
+    }
+
+    .project-card:hover {
+      border-color: #58a6ff;
+    }
+
+    .project-card .proj-name {
+      font-weight: 600;
+      color: #58a6ff;
+      margin-bottom: 0.4rem;
+    }
+
+    .project-card .proj-desc {
+      font-size: 0.88rem;
+      color: #8b949e;
+      margin-bottom: 0.6rem;
+    }
+
+    .project-card .proj-lang {
+      font-size: 0.8rem;
+      color: #c9d1d9;
+    }
+
+    .lang-dot {
+      display: inline-block;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      margin-right: 4px;
+    }
+
+    footer {
+      text-align: center;
+      color: #8b949e;
+      font-size: 0.85rem;
+      margin-top: 4rem;
+      padding-top: 2rem;
+      border-top: 1px solid #30363d;
+    }
+
+    footer a { color: #58a6ff; text-decoration: none; }
+    footer a:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>My Skills</h1>
+      <p>Technical expertise &amp; personal projects — <a href="https://github.com/jiaorenyu" style="color:#58a6ff;">@jiaorenyu</a></p>
+    </header>
+
+    <section>
+      <h2>🖥️ Programming Languages</h2>
+      <div class="skills-grid">
+        <div class="skill-card">
+          <div class="name">Python</div>
+          <div class="stars">★★★★★</div>
+          <div class="note">Data processing, automation, backend</div>
+        </div>
+        <div class="skill-card">
+          <div class="name">TypeScript</div>
+          <div class="stars">★★★★☆</div>
+          <div class="note">Frontend &amp; full-stack web development</div>
+        </div>
+        <div class="skill-card">
+          <div class="name">JavaScript</div>
+          <div class="stars">★★★★☆</div>
+          <div class="note">Web development, Node.js</div>
+        </div>
+        <div class="skill-card">
+          <div class="name">Scala</div>
+          <div class="stars">★★★☆☆</div>
+          <div class="note">Big data, functional programming</div>
+        </div>
+        <div class="skill-card">
+          <div class="name">HTML / CSS</div>
+          <div class="stars">★★★★☆</div>
+          <div class="note">Web UI, responsive design</div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>🛠️ Frameworks &amp; Tools</h2>
+      <div class="tag-list">
+        <span class="tag">React</span>
+        <span class="tag">HTMX</span>
+        <span class="tag">Tailwind CSS</span>
+        <span class="tag">FastAPI</span>
+        <span class="tag">Flask</span>
+        <span class="tag">Node.js</span>
+        <span class="tag">Apache Spark</span>
+        <span class="tag">Git &amp; GitHub</span>
+        <span class="tag">LLM / AI APIs</span>
+        <span class="tag">Edge Computing</span>
+      </div>
+    </section>
+
+    <section>
+      <h2>📂 Featured Projects</h2>
+      <div class="projects-grid">
+        <a class="project-card" href="https://github.com/jiaorenyu/WeType" target="_blank" rel="noopener">
+          <div class="proj-name">WeType</div>
+          <div class="proj-desc">WeChat public account typesetting tool</div>
+          <div class="proj-lang"><span class="lang-dot" style="background:#3178c6;"></span>TypeScript</div>
+        </a>
+        <a class="project-card" href="https://github.com/jiaorenyu/trade-demo" target="_blank" rel="noopener">
+          <div class="proj-name">trade-demo</div>
+          <div class="proj-desc">Book trading system demo</div>
+          <div class="proj-lang"><span class="lang-dot" style="background:#3572a5;"></span>Python</div>
+        </a>
+        <a class="project-card" href="https://github.com/jiaorenyu/AI-Edge" target="_blank" rel="noopener">
+          <div class="proj-name">AI-Edge</div>
+          <div class="proj-desc">AI edge computing project</div>
+          <div class="proj-lang"><span class="lang-dot" style="background:#c22d40;"></span>Scala</div>
+        </a>
+        <a class="project-card" href="https://github.com/jiaorenyu/htmx-demo" target="_blank" rel="noopener">
+          <div class="proj-name">htmx-demo</div>
+          <div class="proj-desc">HTMX usage demonstration</div>
+          <div class="proj-lang"><span class="lang-dot" style="background:#e34c26;"></span>HTML</div>
+        </a>
+        <a class="project-card" href="https://github.com/jiaorenyu/word-parser" target="_blank" rel="noopener">
+          <div class="proj-name">word-parser</div>
+          <div class="proj-desc">Word document parser</div>
+          <div class="proj-lang"><span class="lang-dot" style="background:#3572a5;"></span>Python</div>
+        </a>
+        <a class="project-card" href="https://github.com/jiaorenyu/sudoku" target="_blank" rel="noopener">
+          <div class="proj-name">sudoku</div>
+          <div class="proj-desc">Sudoku solver</div>
+          <div class="proj-lang"><span class="lang-dot" style="background:#3572a5;"></span>Python</div>
+        </a>
+      </div>
+    </section>
+
+    <section>
+      <h2>📈 Currently Learning</h2>
+      <div class="tag-list">
+        <span class="tag">Advanced LLM application development</span>
+        <span class="tag">Edge AI &amp; on-device inference</span>
+        <span class="tag">Modern frontend tooling</span>
+      </div>
+    </section>
+
+    <footer>
+      <p>Built with ❤️ by <a href="https://github.com/jiaorenyu">jiaorenyu</a></p>
+    </footer>
+  </div>
+</body>
+</html>
